@@ -1,0 +1,4 @@
+com\actitime\tests\TC_001_LoginCreateEditDeleteCustomerLogout.class
+com\actitime\tests\TC_002_LoginCreateEditDeleteWorkLogout.class
+com\actitime\tests\TC_003_LoginCreateEditDeleteLeaveLogout.class
+com\actitime\tests\TC_004_LoginCreateEditDeleteUserLogout.class

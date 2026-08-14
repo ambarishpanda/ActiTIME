@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-08-14T14:56:47 IST" name="Suite" finished-at="2026-08-14T14:57:10 IST" duration-ms="22417">
+    <groups>
+    </groups>
+    <test started-at="2026-08-14T14:56:47 IST" name="Test" finished-at="2026-08-14T14:57:10 IST" duration-ms="22417">
+      <class name="com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout@229f66ed]" started-at="2026-08-14T14:56:47 IST" name="setup" finished-at="2026-08-14T14:56:52 IST" duration-ms="4974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login()[pri:1, instance:com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout@229f66ed]" started-at="2026-08-14T14:56:52 IST" name="Login" finished-at="2026-08-14T14:56:54 IST" duration-ms="1529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="createCustomer()[pri:0, instance:com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout@229f66ed]" started-at="2026-08-14T14:56:54 IST" name="createCustomer" finished-at="2026-08-14T14:57:03 IST" depends-on-methods="com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout.Login" duration-ms="9199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method signature="editCustomer()[pri:0, instance:com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout@229f66ed]" started-at="2026-08-14T14:57:03 IST" name="editCustomer" finished-at="2026-08-14T14:57:07 IST" depends-on-methods="com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout.createCustomer" duration-ms="3956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCustomer -->
+        <test-method signature="deleteCustomer()[pri:0, instance:com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout@229f66ed]" started-at="2026-08-14T14:57:07 IST" name="deleteCustomer" finished-at="2026-08-14T14:57:07 IST" depends-on-methods="com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout.editCustomer" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method signature="logout()[pri:0, instance:com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout@229f66ed]" started-at="2026-08-14T14:57:07 IST" name="logout" finished-at="2026-08-14T14:57:09 IST" depends-on-methods="com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout.deleteCustomer" duration-ms="2032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout@229f66ed]" started-at="2026-08-14T14:57:09 IST" name="teardown" finished-at="2026-08-14T14:57:10 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
