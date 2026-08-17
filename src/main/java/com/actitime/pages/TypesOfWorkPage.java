@@ -30,9 +30,10 @@ public class TypesOfWorkPage extends BasePage {
 		
 	public void clickOnNewTypeButton() {
 		try {
-			wait.until(ExpectedConditions.elementToBeClickable(NewTypeButton));
+			wait.until(ExpectedConditions.visibilityOf(NewTypeButton));
 			NewTypeButton.click();
 		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(NewTypeButton));
 			js.executeScript("arguments[0].click()", NewTypeButton);
 		}
 	}
@@ -42,32 +43,37 @@ public class TypesOfWorkPage extends BasePage {
 			wait.until(ExpectedConditions.visibilityOf(clickOnWorkName));
 			clickOnWorkName.click();
 		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(clickOnWorkName));
 			js.executeScript("arguments[0].click()", clickOnWorkName);
 		}
 	}
 	
 	public void clickOnCheckbox() {
 		try {
-			wait.until(ExpectedConditions.elementToBeClickable(checkbox));
+			wait.until(ExpectedConditions.visibilityOf(checkbox));
 			checkbox.click();
 		} catch (Exception e) {
-			wait.until(ExpectedConditions.elementToBeClickable(checkbox));
+			wait.until(ExpectedConditions.visibilityOf(checkbox));
 			js.executeScript("arguments[0].click()", checkbox);
 		}
 	}
 	
 	public void clickOnDeleteButton() {
 		try {
-			wait.until(ExpectedConditions.elementToBeClickable(deleteButton)).click();
+			wait.until(ExpectedConditions.visibilityOf(deleteButton));
+			deleteButton.click();
 		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(deleteButton));
 			js.executeScript("arguments[0].click()", deleteButton);
 		}
 	}
 	
 	public void clickOnOkDeleteButton() {
 		try {
-			wait.until(ExpectedConditions.elementToBeClickable(okdeleteButton)).click();
+			wait.until(ExpectedConditions.elementToBeClickable(okdeleteButton));
+			okdeleteButton.click();
 		} catch (Exception e) {
+			wait.until(ExpectedConditions.elementToBeClickable(okdeleteButton));
 			js.executeScript("arguments[0].click()", okdeleteButton);
 		}
 	}
