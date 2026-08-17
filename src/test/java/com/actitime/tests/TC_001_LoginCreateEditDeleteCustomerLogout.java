@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import com.actitime.pages.CreateNewCustomerPage;
 import com.actitime.pages.HomePage;
-import com.actitime.pages.LoginPage;
 import com.actitime.pages.TaskPage;
 import com.actitime.utility.BaseTest;
 
