@@ -19,7 +19,7 @@ public class TypesOfWorkPage extends BasePage {
 	@FindBy(xpath = "//span[text()='BRAZZERS']")
 	private WebElement clickOnWorkName;
 	
-	@FindBy(xpath = "(//span[contains(text(),'Social Work')]/../../../../../..//*[local-name()='svg'])[1]")
+	@FindBy(xpath = "(//span[text()='Social Work']/../../../../../..//*[local-name()='svg'])[1]")
 	private WebElement checkbox;
 	
 	@FindBy(xpath = "//div[@class='components-ItemListPage-BulkEditActions-triggerBody--uLs1DPdR'][normalize-space()='Delete']")
