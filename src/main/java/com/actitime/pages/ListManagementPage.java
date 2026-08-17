@@ -27,6 +27,7 @@ public class ListManagementPage extends BasePage {
 			wait.until(ExpectedConditions.elementToBeClickable(typesOfWorkButton));
 			typesOfWorkButton.click();
 		} catch (Exception e) {
+			wait.until(ExpectedConditions.elementToBeClickable(typesOfWorkButton));
 			js.executeScript("arguments[0].click()", typesOfWorkButton);
 		}
 	}	
@@ -36,6 +37,7 @@ public class ListManagementPage extends BasePage {
 			wait.until(ExpectedConditions.elementToBeClickable(leaveTypeButton));
 			leaveTypeButton.click();
 		} catch (Exception e) {
+			wait.until(ExpectedConditions.elementToBeClickable(leaveTypeButton));
 			js.executeScript("arguments[0].click()", leaveTypeButton);
 		}
 	}
@@ -45,6 +47,7 @@ public class ListManagementPage extends BasePage {
 			wait.until(ExpectedConditions.elementToBeClickable(crossIcon));
 			crossIcon.click();
 		} catch (Exception e) {
+			wait.until(ExpectedConditions.elementToBeClickable(crossIcon));
 			js.executeScript("arguments[0].click()", crossIcon);
 		}
 	}
