@@ -38,11 +38,13 @@ public class TypesOfWorkPage extends BasePage {
 		}
 	}
 	
-	public void clickOnWorkName() {
+	public void clickOnWorkName() throws InterruptedException {
 		try {
+			Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOf(clickOnWorkName));
 			clickOnWorkName.click();
 		} catch (Exception e) {
+			Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOf(clickOnWorkName));
 			js.executeScript("arguments[0].click()", clickOnWorkName);
 		}
