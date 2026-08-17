@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-<!--       <class name="com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout"/> -->
+      <class name="com.actitime.tests.TC_001_LoginCreateEditDeleteCustomerLogout"/>
       <class name="com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout"/>
       <class name="com.actitime.tests.TC_003_LoginCreateEditDeleteLeaveLogout"/>
-<!--       <class name="com.actitime.tests.TC_004_LoginCreateEditDeleteUserLogout"/> -->
+      <class name="com.actitime.tests.TC_004_LoginCreateEditDeleteUserLogout"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
