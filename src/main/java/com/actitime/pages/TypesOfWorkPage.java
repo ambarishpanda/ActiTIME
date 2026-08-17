@@ -48,8 +48,10 @@ public class TypesOfWorkPage extends BasePage {
 	
 	public void clickOnCheckbox() {
 		try {
-			wait.until(ExpectedConditions.elementToBeClickable(checkbox)).click();
+			wait.until(ExpectedConditions.elementToBeClickable(checkbox));
+			checkbox.click();
 		} catch (Exception e) {
+			wait.until(ExpectedConditions.elementToBeClickable(checkbox));
 			js.executeScript("arguments[0].click()", checkbox);
 		}
 	}

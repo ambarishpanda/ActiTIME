@@ -1,6 +1,8 @@
 package com.actitime.pages;
 
 import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -25,14 +27,13 @@ public class EditTypeOfWorkPage extends BasePage {
 	
 	public void editName() throws AWTException, IOException, InterruptedException {
 		wait.until(ExpectedConditions.visibilityOf(editWorkName));
-		editWorkName.clear();
-//		Robot robo = new Robot();
-//		robo.keyPress(KeyEvent.VK_CONTROL);
-//		robo.keyPress(KeyEvent.VK_A);
-//		robo.keyRelease(KeyEvent.VK_CONTROL);
-//		robo.keyRelease(KeyEvent.VK_A);
-//		robo.keyPress(KeyEvent.VK_BACK_SPACE);
-//		robo.keyRelease(KeyEvent.VK_BACK_SPACE);
+		Robot robo = new Robot();
+		robo.keyPress(KeyEvent.VK_CONTROL);
+		robo.keyPress(KeyEvent.VK_A);
+		robo.keyRelease(KeyEvent.VK_CONTROL);
+		robo.keyRelease(KeyEvent.VK_A);
+		robo.keyPress(KeyEvent.VK_BACK_SPACE);
+		robo.keyRelease(KeyEvent.VK_BACK_SPACE);
 //		editWorkName.sendKeys("Social Work");
 		Thread.sleep(3000);
 		editWorkName.sendKeys(ExcelLibrary.readData("work", 1, 1));
