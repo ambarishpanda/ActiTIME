@@ -25,7 +25,6 @@ public class EditTypeOfWorkPage extends BasePage {
 	private WebElement saveButton;
 	
 	public void editName() throws AWTException, IOException, InterruptedException {
-		String work = ExcelLibrary.readData("work", 1, 1);
 		wait.until(ExpectedConditions.visibilityOf(editWorkName));
 //		Robot robo = new Robot();
 //		robo.keyPress(KeyEvent.VK_CONTROL);
@@ -37,7 +36,7 @@ public class EditTypeOfWorkPage extends BasePage {
 		editWorkName.sendKeys(Keys.CONTROL,"a");
 		editWorkName.sendKeys(Keys.BACK_SPACE);
 //		Thread.sleep(3000);
-		editWorkName.sendKeys(work);
+		editWorkName.sendKeys(ExcelLibrary.readData("work", 1, 1));
 	}
 	
 	public void clickOnSaveButton() throws InterruptedException {
