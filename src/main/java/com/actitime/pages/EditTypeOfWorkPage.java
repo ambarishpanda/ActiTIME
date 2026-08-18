@@ -1,10 +1,9 @@
 package com.actitime.pages;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,16 +25,19 @@ public class EditTypeOfWorkPage extends BasePage {
 	private WebElement saveButton;
 	
 	public void editName() throws AWTException, IOException, InterruptedException {
+		String work = ExcelLibrary.readData("work", 1, 1);
 		wait.until(ExpectedConditions.visibilityOf(editWorkName));
-		Robot robo = new Robot();
-		robo.keyPress(KeyEvent.VK_CONTROL);
-		robo.keyPress(KeyEvent.VK_A);
-		robo.keyRelease(KeyEvent.VK_CONTROL);
-		robo.keyRelease(KeyEvent.VK_A);
+//		Robot robo = new Robot();
+//		robo.keyPress(KeyEvent.VK_CONTROL);
+//		robo.keyPress(KeyEvent.VK_A);
+//		robo.keyRelease(KeyEvent.VK_CONTROL);
+//		robo.keyRelease(KeyEvent.VK_A);
 //		robo.keyPress(KeyEvent.VK_BACK_SPACE);
 //		robo.keyRelease(KeyEvent.VK_BACK_SPACE);
-		Thread.sleep(3000);
-		editWorkName.sendKeys(ExcelLibrary.readData("work", 1, 1));
+		editWorkName.sendKeys(Keys.CONTROL,"a");
+		editWorkName.sendKeys(Keys.BACK_SPACE);
+//		Thread.sleep(3000);
+		editWorkName.sendKeys(work);
 	}
 	
 	public void clickOnSaveButton() throws InterruptedException {
