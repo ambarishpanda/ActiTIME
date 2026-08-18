@@ -8,12 +8,12 @@
       <![CDATA[execution happening in : null]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-08-18T14:00:16 IST" name="Suite" finished-at="2026-08-18T14:01:14 IST" duration-ms="58487">
+  <suite started-at="2026-08-18T19:22:44 IST" name="Suite" finished-at="2026-08-18T19:23:14 IST" duration-ms="29937">
     <groups>
     </groups>
-    <test started-at="2026-08-18T14:00:16 IST" name="Test" finished-at="2026-08-18T14:01:14 IST" duration-ms="58487">
+    <test started-at="2026-08-18T19:22:44 IST" name="Test" finished-at="2026-08-18T19:23:14 IST" duration-ms="29937">
       <class name="com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T14:00:16 IST" name="setup" finished-at="2026-08-18T14:00:37 IST" duration-ms="21020" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T19:22:45 IST" name="setup" finished-at="2026-08-18T19:22:52 IST" duration-ms="7901" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[execution happening in : null]]>
@@ -23,19 +23,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createWork()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T14:00:37 IST" name="createWork" finished-at="2026-08-18T14:01:02 IST" duration-ms="25492" status="PASS">
+        <test-method signature="createWork()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T19:22:52 IST" name="createWork" finished-at="2026-08-18T19:23:03 IST" duration-ms="10238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createWork -->
-        <test-method signature="editWork()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T14:01:02 IST" name="editWork" finished-at="2026-08-18T14:01:11 IST" depends-on-methods="com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout.createWork" duration-ms="8486" status="PASS">
+        <test-method signature="editWork()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T19:23:03 IST" name="editWork" finished-at="2026-08-18T19:23:11 IST" depends-on-methods="com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout.createWork" duration-ms="8250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editWork -->
-        <test-method signature="deleteWork()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T14:01:11 IST" name="deleteWork" finished-at="2026-08-18T14:01:11 IST" depends-on-methods="com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout.editWork" duration-ms="464" status="PASS">
+        <test-method signature="deleteWork()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T19:23:11 IST" name="deleteWork" finished-at="2026-08-18T19:23:11 IST" depends-on-methods="com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout.editWork" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteWork -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T14:01:11 IST" name="teardown" finished-at="2026-08-18T14:01:14 IST" duration-ms="2964" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.actitime.tests.TC_002_LoginCreateEditDeleteWorkLogout@682b2fa]" started-at="2026-08-18T19:23:11 IST" name="teardown" finished-at="2026-08-18T19:23:14 IST" duration-ms="3299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
