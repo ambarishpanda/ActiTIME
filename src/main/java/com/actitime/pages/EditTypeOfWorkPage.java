@@ -40,6 +40,7 @@ public class EditTypeOfWorkPage extends BasePage {
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(editWorkName));
 			editWorkName.clear();
+			editWorkName.sendKeys(ExcelLibrary.readData("work", 1, 1));
 		}
 	}
 	
