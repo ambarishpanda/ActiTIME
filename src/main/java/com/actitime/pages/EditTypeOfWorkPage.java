@@ -26,16 +26,8 @@ public class EditTypeOfWorkPage extends BasePage {
 	
 	public void editName() throws AWTException, IOException, InterruptedException {
 		wait.until(ExpectedConditions.visibilityOf(editWorkName));
-//		Robot robo = new Robot();
-//		robo.keyPress(KeyEvent.VK_CONTROL);
-//		robo.keyPress(KeyEvent.VK_A);
-//		robo.keyRelease(KeyEvent.VK_CONTROL);
-//		robo.keyRelease(KeyEvent.VK_A);
-//		robo.keyPress(KeyEvent.VK_BACK_SPACE);
-//		robo.keyRelease(KeyEvent.VK_BACK_SPACE);
 		editWorkName.sendKeys(Keys.CONTROL,"a");
 		editWorkName.sendKeys(Keys.BACK_SPACE);
-//		Thread.sleep(3000);
 		editWorkName.sendKeys(ExcelLibrary.readData("work", 1, 1));
 	}
 	
